@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .section-group {
+    @apply flex items-center justify-between -space-x-20 mb-[50px] lg:mb-[80px];
+  }
+}

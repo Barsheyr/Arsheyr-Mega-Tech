@@ -1,13 +1,19 @@
 import React from "react";
-import { PageHero } from "../components";
+import { Filters, ProductList, Sort, PageHero } from "../components";
 
 const ProductsPage = () => {
   return (
     <div className=" bg-slate-50">
       <PageHero title="Products" />
-      <main>
-        <h1> Products here</h1>
-      </main>
+      <div className="page">
+        <div className="section-center products">
+          <Filters />
+          <div>
+            <Sort />
+            <ProductList />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

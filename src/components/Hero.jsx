@@ -6,9 +6,9 @@ import bcg2 from "../assets/bcg2.jpg";
 const Hero = () => {
   return (
     <div className="max-w-6xl mx-auto px-5 py-20 grid lg:first:grid-cols-2">
-      <div className="font-Tiltnoon text-black mt-20">
+      <div className=" text-black mt-20">
         <h1 className="lg:text-5xl text-4xl font-bold uppercase">
-          Enter the Future: <br /> Your Gateway to Innovation!
+          Your Gateway to Innovation!
         </h1>
         <p className="mt-10 text-lg mb-10 lg:pr-32 leading-8">
           Discover the latest in cutting-edge technology at your fingertips.

@@ -6,49 +6,50 @@ import { GiCompass, GiDiamondHard, GiStabbedNote } from "react-icons/gi";
 const servicess = [
   {
     id: 1,
-    icon: <GiCompass />,
-    title: "mission",
+    icon: <GiCompass size={50} />,
+    title: "BUY",
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
   },
   {
     id: 2,
-    icon: <GiDiamondHard />,
-    title: "vision",
+    icon: <GiDiamondHard size={50} />,
+    title: "SELL",
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
   },
   {
     id: 3,
-    icon: <GiStabbedNote />,
-    title: "history",
+    icon: <GiStabbedNote size={50} />,
+    title: "SWAP",
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
   },
 ];
 
 const Services = () => {
   return (
-    <main className="bg-yellow-300 font-Tiltnoon mt-32 py-40 relative">
-      <div className="max-w-5xl mx-auto  ">
-        <article className="grid lg:grid-cols-2 px-20 -mt-20">
-          <h3 className="text-4xl font-Tiltnoon font-bold tracking-widest">
-            Custom furniture <br /> built only for you
+    <main className=" bg-yellow-50 mt-20 lg:h-[50vh] relative">
+      <div className="">
+        <article className="grid lg:grid-cols-2 lg:px-32 px-10 space-y-5">
+          <h3 className="text-5xl">
+            Find your tech <br /> built only for you
           </h3>
-          <p>
+          <p className="text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
             dolorum debitis consectetur reprehenderit non aliquam voluptates
             dolore aut vero consequuntur.
           </p>
         </article>
-        <div className="grid lg:grid-cols-3 gap-5 max-w-5xl mx-auto mt-20 lg:absolute ">
+
+        <div className="grid lg:grid-cols-3 mt-20 gap-5 lg:absolute lg:top-20 lg:px-40 px-10">
           {servicess.map((service) => {
             const { id, icon, title, text } = service;
             return (
               <article
-                className="text-center bg-yellow-500 py-20 lg:mx-0 mx-10 px-5 rounded-md"
+                className="bg-yellow-100 mx-auto max-w-6xl flex flex-col items-center py-10 px-10 space-y-5 text-center rounded-md"
                 key={id}
               >
                 <span className="icon">{icon}</span>
-                <h4 className="text-2xl uppercase font-bold">{title}</h4>
-                <p className="tracking-widest mt-5">{text}</p>
+                <h4 className="text-xl uppercase font-bold">{title}</h4>
+                <p className="tracking-widest mt-5 text-lg">{text}</p>
               </article>
             );
           })}

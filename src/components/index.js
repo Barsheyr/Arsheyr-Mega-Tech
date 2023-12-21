@@ -7,6 +7,9 @@ import Contacts from "./Contacts";
 import FeaturedProducts from "./FeaturedProducts";
 import Header from "./Header";
 import PageHero from "./PageHero";
+import Filters from "./Filters";
+import ProductList from "./ProductList";
+import Sort from "./Sort";
 
 export {
   Navbar,
@@ -18,4 +21,7 @@ export {
   Contacts,
   FeaturedProducts,
   PageHero,
+  Filters,
+  ProductList,
+  Sort,
 };

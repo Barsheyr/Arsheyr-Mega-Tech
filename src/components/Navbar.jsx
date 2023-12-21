@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="">
         <nav
           className={`${isActive ? "text-black" : "text-black"}
-        hidden lg:flex gap-x-4 font-tertiary tracking-[3px] text-[15px] items-center uppercase lg:gap-x-8`}
+        hidden lg:flex gap-x-4 font-ntr tracking-[3px] text-[15px] items-center uppercase lg:gap-x-8`}
         >
           <NavLink to="/" className="hover:underline">
             Home

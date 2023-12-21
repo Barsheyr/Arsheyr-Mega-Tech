@@ -7,6 +7,7 @@ export default {
         Inter: ["Inter", "sans-serif"],
         Opensans: ["Opensans", "sans-serif"],
         Tiltnoon: ["Tilt Neon", "sans-serif"],
+        ntr: ["NTR", "sans-serif"],
       },
       colors: {
         circleColor: "#4C544F",

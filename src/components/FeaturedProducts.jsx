@@ -1,21 +1,62 @@
 import React from "react";
+import { useProductsContext } from "../context/products_content";
+import { Link } from "react-router-dom";
+// import styled from "styled-components";
+import Error from "./Error";
+import Loading from "./Loading";
+import Product from "./Products";
 
 const FeaturedProducts = () => {
+  const {
+    products_loading: loading,
+    products_error: error,
+    featured_products: featured,
+  } = useProductsContext();
+  if (loading) {
+    return <Loading />;
+  }
+  if (error) {
+    return <Error />;
+  }
   return (
-    <div className="max-w-5xl mx-auto">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-      consectetur quisquam illum beatae explicabo odit autem veniam. Obcaecati
-      odit eum, earum illum totam exercitationem, repellendus, et rem impedit
-      adipisci natus placeat nisi quibusdam possimus. Nesciunt laborum p
-      excepturi tenetur! Eius autem repudiandae eum praesentium ipsam recusandae
-      ill odio repellat illo nemo! Nam dolorum culpa neque? Odit non, modi
-      itaque accusamus repellat et reprehenderit soluta, tempore sed harum autem
-      libero? Commodi, quas soluta! Ratione exercitationem cum nesciunt facere
-      vel dolores quis aliquid est. Quas, mollitia? Quae dignissimos porro
-      facilis obcaecati animi laboriosam, illum quos libero repellendus magni
-      est ull corrupti beatae aliquam molestias nam. Vel?
+    <div className="section ">
+      <div className="title text-center lg:text-justify text-5xl">
+        <h2>featured products</h2>
+        <div className="underline"></div>
+      </div>
+      <div className="max-w-4xl mx-auto  grid lg:grid-cols-3 px-20 ">
+        {featured.slice(0, 3).map((product) => {
+          return <Product key={product.id} {...product} />;
+        })}
+      </div>
+      <Link to="/products" className="btn">
+        all products
+      </Link>
     </div>
   );
 };
+
+// const Wrapper = styled.section`
+//   background: var(--clr-grey-10);
+//   .featured {
+//     margin: 4rem auto;
+//     display: grid;
+//     gap: 2.5rem;
+//     img {
+//       height: 225px;
+//     }
+//   }
+//   .btn {
+//     display: block;
+//     width: 148px;
+//     margin: 0 auto;
+//     text-align: center;
+//   }
+//   @media (min-width: 576px) {
+//     .featured {
+//       grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+//     }
+//   }
+// `;
 
 export default FeaturedProducts;

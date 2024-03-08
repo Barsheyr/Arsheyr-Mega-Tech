@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 const ListView = ({ products }) => {
   return (
-    <div>
+    <div className=" max-w-5xl mx-auto px-20 flex flex-col items-center justify-between">
       {products.map((product) => {
         const { id, image, name, price, description } = product;
         return (
-          <article key={id}>
+          <article key={id} className="grid grid-cols-1">
             <img src={image} alt={name} className="h-[20vh]" />
             <div>
               <h4>{name}</h4>

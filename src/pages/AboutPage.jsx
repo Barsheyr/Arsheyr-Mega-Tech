@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <div className=" bg-slate-50 py-20">
       <PageHero title="about" />
-      <main className="grid grid-cols-2 gap-10 max-w-5xl mx-auto py-20">
+      <main className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto py-20 px-20">
         <img src={aboutImg} alt="" className="rounded-md" />
         <article className="space-y-10">
           <div>

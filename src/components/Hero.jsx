@@ -6,7 +6,7 @@ import bcg2 from "../assets/bcg2.jpg";
 const Hero = () => {
   return (
     <div className="max-w-6xl mx-auto px-5 py-20 grid lg:first:grid-cols-2">
-      <div className=" text-black mt-20">
+      <div className=" text-black mt-32">
         <h1 className="lg:text-5xl text-4xl font-bold uppercase">
           Your Gateway to Innovation!
         </h1>
@@ -18,17 +18,17 @@ const Hero = () => {
         </p>
 
         <Link
-          to="/products"
-          className="bg-yellow-500 py-3 px-3 text-black uppercase rounded-md"
+          to="/productpage"
+          className="bg-blue-400 py-5 px-10 text-black uppercase rounded-md font-semibold"
         >
           Shop now
         </Link>
       </div>
 
       {/* image */}
-      <div className="h-[55vh] mt-20">
+      <div className="h-[55vh] mt-32">
         <img src={herobcg} alt="" className="h-[50vh] rounded-md" />
-        {/* <img src={bcg2} alt="" className="rounded-md" /> */}
+        <img src={bcg2} alt="" className="rounded-md h-[10vh]" />
       </div>
     </div>
   );

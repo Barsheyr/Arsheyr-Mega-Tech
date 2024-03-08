@@ -10,6 +10,14 @@ import PageHero from "./PageHero";
 import Filters from "./Filters";
 import ProductList from "./ProductList";
 import Sort from "./Sort";
+import AddToCart from "./AddToCart";
+import Error from "./Error";
+import Loading from "./Loading";
+import ProductImage from "./ProductImage";
+import Stars from "./Stars";
+import CartContent from "./CartContent";
+import StripeCheckout from "./StripeCheckout";
+import BrandCard from "./BrandCard";
 
 export {
   Navbar,
@@ -24,4 +32,12 @@ export {
   Filters,
   ProductList,
   Sort,
+  AddToCart,
+  Error,
+  Loading,
+  ProductImage,
+  Stars,
+  CartContent,
+  StripeCheckout,
+  BrandCard,
 };

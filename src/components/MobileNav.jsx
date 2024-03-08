@@ -8,9 +8,9 @@ const MobileNav = () => {
         <NavLink to="/" className="nav-link">
           Home
         </NavLink>
-        <NavLink to="/about" className="nav-link">
+        {/* <NavLink to="/about" className="nav-link">
           About
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/productpage" className="nav-link">
           Products
         </NavLink>

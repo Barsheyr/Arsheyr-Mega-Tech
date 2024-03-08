@@ -6,16 +6,24 @@ import { Link } from "react-router-dom";
 const Products = ({ image, name, price, id }) => {
   return (
     <main>
-      <div className="container">
-        <img src={image} alt={name} className="h-[30vh]" />
-        <Link to={`/products/${id}`} className="link">
-          <FaSearch />
+      <div className="relative cursor-pointer">
+        <img
+          src={image}
+          alt={name}
+          className="h-[30vh] w-[100vh] object-cover hover:opacity-50 rounded-md shadow-sm"
+        />
+        <Link
+          to={`/productpage/${id}`}
+          className="absolute top-[40%] left-[40%] hover:opacity-100 opacity-0 bg-blue-500
+          flex items-center justify-center rounded-full p-5"
+        >
+          <FaSearch className="" />
         </Link>
       </div>
-      <footer>
+      <div className="flex flex-1 justify-between mt-5">
         <h5>{name}</h5>
         <p>{formatPrice(price)}</p>
-      </footer>
+      </div>
     </main>
   );
 };

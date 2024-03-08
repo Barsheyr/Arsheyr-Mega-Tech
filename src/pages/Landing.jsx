@@ -1,14 +1,23 @@
 import React from "react";
-import { Header, Footer } from "../components";
-import { Outlet } from "react-router-dom";
+import { Header, Footer, Loading } from "../components";
+import { Outlet, useNavigation } from "react-router-dom";
 
 const Landing = () => {
+  const navigation = useNavigation();
+  const isPageLoading = navigation.state === "loading";
   return (
-    <div className="">
+    <>
       <Header />
-      <Outlet />
+      {isPageLoading ? (
+        <Loading />
+      ) : (
+        <section>
+          <Outlet />
+        </section>
+      )}
+
       <Footer />
-    </div>
+    </>
   );
 };
 

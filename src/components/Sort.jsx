@@ -13,31 +13,33 @@ const Sort = () => {
   } = useFilterContext();
 
   return (
-    <div>
-      <div className="btn-container">
+    <div className="flex lg:flex-row flex-col lg:items-center gap-3 justify-between py-10 lg:px-20  px-5 max-5xl mx-auto">
+      <div className="flex lg:flex-row items-center gap-2">
         <button
           onClick={setGridView}
           className={`${grid_view ? "active" : null}`}
         >
-          <BsFillGridFill />
+          <BsFillGridFill size={20} />
         </button>
         <button
           onClick={setListView}
           className={`${!grid_view ? "active" : null}`}
         >
-          <BsList />
+          <BsList size={20} />
         </button>
       </div>
-      <p>{products.length} products found</p>
-      <hr />
+      <p className="">{products.length} products found</p>
+      <hr className="lg:w-[50%] h-0.5 bg-gray-300" />
       <form>
-        <label htmlFor="sort">sort by</label>
+        <label htmlFor="sort" className="text-md">
+          Sort by
+        </label>
         <select
           name="sort"
           id="sort"
           value={sort}
           onChange={updateSort}
-          className="sort-input"
+          className="p-2"
         >
           <option value="price-lowest">price (lowest)</option>
           <option value="price-highest">price (highest)</option>

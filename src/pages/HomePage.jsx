@@ -9,13 +9,12 @@ import {
 
 const HomePage = () => {
   return (
-    <div className="z-30 font-ntr">
+    <div className="z-30 font-inter">
       <Hero />
       <FeaturedProducts />
       <div className="">
         <Services />
       </div>
-
       <Contacts />
     </div>
   );

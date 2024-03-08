@@ -3,6 +3,7 @@ import { HiMenuAlt4, HiOutlineX, HiArrowLeft } from "react-icons/hi";
 import Navbar from "./Navbar";
 import MobileNav from "./MobileNav";
 import CartButton from "./CartButton";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -17,17 +18,19 @@ const Header = () => {
   return (
     <header
       className={`${
-        isActive ? "bg-slate-50 py-6" : "bg-transparent py-6"
-      }   fixed z-20 w-full shadow-md transition-all font-Tiltnoon`}
+        isActive ? "bg-slate-50 py-10" : "bg-transparent py-10"
+      }   fixed z-20 w-full shadow-md transition-all font-ntr`}
     >
       <div className="lg:max-w-5xl mx-6 lg:mx-auto flex justify-between items-center">
-        <h1
-          className={`${
-            isActive ? "text-yellow-500" : "text-yellow-500"
-          } text-2xl tracking-[10px]`}
-        >
-          ARSHEYR
-        </h1>
+        <Link to="/">
+          <h1
+            className={`${
+              isActive ? "text-blue-500" : "text-blue-500"
+            } text-2xl tracking-[10px] font-Inter font-bold`}
+          >
+            ARSHEYR
+          </h1>
+        </Link>
 
         <div>
           <Navbar />

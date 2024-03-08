@@ -16,14 +16,14 @@ const Navbar = () => {
       <div className="">
         <nav
           className={`${isActive ? "text-black" : "text-black"}
-        hidden lg:flex gap-x-4 font-ntr tracking-[3px] text-[15px] items-center uppercase lg:gap-x-8`}
+        hidden lg:flex gap-x-4  tracking-[3px] text-xl items-center uppercase lg:gap-x-8`}
         >
           <NavLink to="/" className="hover:underline">
             Home
           </NavLink>
-          <NavLink to="/about" className="nav-link">
+          {/* <NavLink to="/about" className="nav-link">
             About
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/productpage" className="nav-link">
             Products
           </NavLink>

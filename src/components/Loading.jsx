@@ -2,8 +2,8 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div className="section secton-center">
-      <div className="loading"></div>
+    <div className="h-screen flex items-center justify-center">
+      <span className="loading loading-ring loading-lg" />
     </div>
   );
 };

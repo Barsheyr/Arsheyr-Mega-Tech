@@ -24,10 +24,10 @@ const router = createBrowserRouter([
         index: true,
         element: <HomePage />,
       },
-      {
-        path: "/about",
-        element: <AboutPage />,
-      },
+      // {
+      //   path: "/about",
+      //   element: <AboutPage />,
+      // },
       {
         path: "/cartpage",
         element: <CartPage />,
@@ -39,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/productpage/:id",
         element: <SingleProductPage />,
+      },
+      {
+        path: "/checkout",
+        element: <CheckoutPage />,
       },
     ],
   },

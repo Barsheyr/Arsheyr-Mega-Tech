@@ -32,7 +32,7 @@ const AddToCart = ({ product }) => {
 
   return (
     <section>
-      <div className="colors">
+      <div className="flex gap-5">
         <span>colors :</span>
         <div>
           {colors.map((color, index) => {
@@ -60,7 +60,7 @@ const AddToCart = ({ product }) => {
 
         <Link
           to="/cartpage"
-          className="btn"
+          className="btn bg-blue-500 text-white hover:bg-blue-300 hover:text-black px-10"
           onClick={() => addToCart(id, mainColor, amount, product)}
         >
           add to cart

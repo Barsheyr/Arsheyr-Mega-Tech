@@ -11,12 +11,14 @@ const CartButton = () => {
     <section className="flex flex-row gap-10 font-Inter">
       <Link
         to="/cartpage"
-        className="flex items-center justify-between gap-2 uppercase text-md"
+        className="flex font-Tiltnoon items-center justify-between text-xl text-md"
       >
         Cart
-        <span className="flex flex-row justify-center items-center rounded-full w-10  h-10 bg-blue-500">
-          <FaShoppingCart size={"1.5rem"} className="absolute" />
-          <span className="relative -top-4 left-5"> {total_items} </span>
+        <span className="flex flex-row justify-center items-center rounded-full px-5 py-3">
+          <FaShoppingCart size={30} className="absolute" />
+          <span className="relative text-xs -top-2 left-4 bg-blue-500 text-white rounded-full px-1">
+            {total_items}
+          </span>
         </span>
       </Link>
 

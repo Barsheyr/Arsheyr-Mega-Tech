@@ -13,9 +13,9 @@ const CartItem = ({ id, image, name, color, price, amount }) => {
     toggleAmount(id, "dec");
   };
   return (
-    <div>
-      <div className="title">
-        <img src={image} alt={name} />
+    <div className="flex flex-row justify-between items-center">
+      <div className="">
+        <img src={image} alt={name} className="h-[10vh]" />
         <div>
           <h5 className="name">{name}</h5>
           <p className="color">

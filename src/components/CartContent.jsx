@@ -10,19 +10,22 @@ const CartContent = () => {
 
   return (
     <section>
-      <div className="">
+      <div className="max-w-6xl mx-auto">
         <CartColumns />
         {cart.map((item) => {
           return <CartItem key={item.id} {...item} />;
         })}
         <hr />
-        <div className="link-container">
-          <Link to="/products" className="link-btn">
+        <div className="flex flex-row justify-between items-center py-10">
+          <Link
+            to="/products"
+            className="btn bg-blue-500 text-white hover:bg-blue-300 hover:text-black px-5"
+          >
             continue shopping
           </Link>
           <button
             type="button"
-            className="link-btn clear-btn"
+            className="link-btn clear-btn btn bg-black text-white hover:bg-blue-300 hover:text-black px-5"
             onClick={clearCart}
           >
             clear shopping cart

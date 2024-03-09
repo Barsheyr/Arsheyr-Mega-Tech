@@ -60,28 +60,25 @@ const SingleProductPage = () => {
   return (
     <div className="py-28">
       <PageHero title={name} product />
-      <div className="max-w-5xl mx-auto px-10">
-        <Link to="/productpage" className="btn my-10">
-          back to products
-        </Link>
+      <div className="max-w-7xl mx-auto px-10">
         <div className="flex lg:flex-row flex-col items-center justify-center gap-20">
           <ProductImage images={images} className="" />
-          <section className="flex flex-col gap-2 flex-1">
+          <section className="flex flex-col gap-4 flex-1">
             <h2 className="text-6xl">{name}</h2>
             <Stars stars={stars} reviews={reviews} />
-            <h5 className="price text-blue-400 font-bold">
+            <h5 className="price text-blue-400 text-2xl font-bold">
               {formatPrice(price)}
             </h5>
-            <p className="desc">{description}</p>
-            <p className="info">
+            <p className="desc text-xl tracking-widest">{description}</p>
+            <p className="flex gap-10">
               <span className="text-blue-400 font-bold">Available : </span>
               {stock > 0 ? "In stock" : "out of stock"}
             </p>
-            <p className="info">
+            <p className="flex gap-10">
               <span className="text-blue-400 font-bold">SKU : </span>
               {sku}
             </p>
-            <p className="info">
+            <p className="flex gap-10">
               <span className="text-blue-400 font-bold">Brand : </span>
               {company}
             </p>
@@ -89,6 +86,12 @@ const SingleProductPage = () => {
             {stock > 0 && <AddToCart product={product} />}
           </section>
         </div>
+        <Link
+          to="/productpage"
+          className="btn mt-10 bg-blue-500 text-white hover:bg-blue-300 hover:text-black px-10"
+        >
+          back to products
+        </Link>
       </div>
     </div>
   );

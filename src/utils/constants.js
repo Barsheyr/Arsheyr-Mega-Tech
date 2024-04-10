@@ -116,19 +116,22 @@ export const productcard = {
     {
       icon: "Fa-Apple",
       title: "Samsung",
-      subtitle: "Elit esse cillum dolore eu fugiat nulla pariatur",
+      subtitle:
+        "Samsung, a global leader, partners with us for innovative solutions.",
       delay: 200,
     },
     {
       // icon: <FaApple />,
       title: "Apple",
-      subtitle: "Elit esse cillum dolore eu fugiat nulla pariatur",
+      subtitle:
+        "Innovators in tech, partners in progress, driving future together.",
       delay: 400,
     },
     {
       // icon: CardIconImg3,
       title: "Huawei",
-      subtitle: "Elit esse cillum dolore eu fugiat nulla pariatur",
+      subtitle:
+        "We collaborate closely with Huawei, innovating together to revolutionize technology.",
       delay: 600,
     },
   ],

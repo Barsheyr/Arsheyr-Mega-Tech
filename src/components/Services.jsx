@@ -11,19 +11,19 @@ const servicess = [
     id: 1,
     icon: <BiPurchaseTagAlt size={50} />,
     title: "BUY",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
+    text: "Discover quality products, unbeatable prices, and exceptional service. Shop with us today for a seamless shopping experience!",
   },
   {
     id: 2,
     icon: <BsCart4 size={50} />,
     title: "SELL",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
+    text: "We offer cutting-edge tech solutions tailored to your needs, ensuring efficiency, innovation, and seamless integration for ultimate customer satisfaction.",
   },
   {
     id: 3,
     icon: <VscArrowSwap size={50} />,
     title: "SWAP",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
+    text: "Swap deals offer customers US products for their goods/services, fostering exchange and enhancing market access and diversity.",
   },
 ];
 
@@ -31,24 +31,26 @@ const Services = () => {
   return (
     <main className="mt-20 py-20 lg:h-[100vh] relative">
       <div className="w-full">
-        <span class="absolute w-full h-[100vh] lg:h-[50%]  top-10 bg-blue-200 -z-[1]"></span>
+        <span class="absolute w-full h-[100vh] lg:h-[50%] top-20 bg-blue-100 -z-[1]"></span>
         <article className="grid lg:grid-cols-2 max-w-6xl mx-auto space-y-5 px-10 lg:px-0">
-          <h3 className="text-5xl font-bold">
+          <h3 className="text-5xl font-bold mt-10">
             Find your tech <br /> built only for you
           </h3>
-          <p className="text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum debitis consectetur reprehenderit non aliquam voluptates
-            dolore aut vero consequuntur.
+          <p className="text-lg">
+            Introducing the latest innovation tailored just for you: our
+            cutting-edge products optimizes your experience seamlessly, ensuring
+            unparalleled convenience and efficiency at every interaction.
+            Elevate your journey with our personalized tech solution, designed
+            to anticipate and exceed your needs with precision and care.
           </p>
         </article>
 
-        <div className="grid lg:grid-cols-3 mt-20 gap-5 lg:top-20 lg:px-40 px-10">
+        <div className="grid lg:grid-cols-3 mt-20 gap-5 lg:top-10 lg:px-40 px-10">
           {servicess.map((service) => {
             const { id, icon, title, text } = service;
             return (
               <article
-                className="bg-blue-100 mx-auto max-w-6xl flex flex-col items-center py-10 px-10 space-y-5 text-center rounded-md"
+                className="bg-blue-50 mx-auto max-w-6xl flex flex-col items-center py-10 px-10 space-y-5 text-center rounded-lg"
                 key={id}
               >
                 <span className="icon">{icon}</span>

@@ -5,7 +5,7 @@ const ProductImage = ({ images = [[]] }) => {
   return (
     <div className="flex-1">
       <img src={main.url} alt="" className="h-[50vh] rounded-lg" />
-      <div className="grid grid-cols-4 gap-2 mt-10">
+      {/* <div className="grid grid-cols-4 gap-2 mt-10">
         {images.map((image, index) => {
           return (
             <img
@@ -19,7 +19,7 @@ const ProductImage = ({ images = [[]] }) => {
             />
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -8,8 +8,8 @@ const CartTotals = () => {
   const { total_amount, shipping_fee } = useCartContext();
   return (
     <div>
-      <div>
-        <article>
+      <div className="">
+        <article className="font-bold">
           <h5>
             subtotal :<span>{formatPrice(total_amount)}</span>
           </h5>
@@ -17,7 +17,10 @@ const CartTotals = () => {
             shipping fee :<span>{formatPrice(shipping_fee)}</span>
           </p>
           <hr />
-          <h4>
+          <h4
+            className="py-10
+          "
+          >
             order total :<span>{formatPrice(total_amount + shipping_fee)}</span>
           </h4>
         </article>

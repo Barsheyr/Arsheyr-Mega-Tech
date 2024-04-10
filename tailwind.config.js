@@ -8,6 +8,8 @@ export default {
         Opensans: ["Opensans", "sans-serif"],
         Tiltnoon: ["Tilt Neon", "sans-serif"],
         ntr: ["NTR", "sans-serif"],
+        Dosis: ["Dosis", "sans-serif"],
+        Fjalla: ["Fjalla One", "sans-serif"],
       },
       colors: {
         circleColor: "#4C544F",

@@ -10,7 +10,7 @@ const Hero = () => {
         <h1 className="lg:text-5xl text-4xl font-bold uppercase">
           Gateway to Innovation!
         </h1>
-        <p className="mt-10 text-lg mb-10 lg:pr-32 leading-8">
+        <p className="mt-10 text-xl mb-10 lg:pr-32 leading-8">
           Discover the latest in cutting-edge technology at your fingertips. Our
           expertly curated selection of products ensures you stay ahead in the
           fast-paced world of technology.

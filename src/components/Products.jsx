@@ -14,7 +14,7 @@ const Products = ({ image, name, price, id }) => {
         />
         <Link
           to={`/productpage/${id}`}
-          className="absolute top-[40%] left-[40%] hover:opacity-100 opacity-0 bg-blue-500
+          className="absolute top-[40%] left-[40%] hover:opacity-100 opacity-0 bg-blue-100
           flex items-center justify-center rounded-full p-5"
         >
           <FaSearch className="" />

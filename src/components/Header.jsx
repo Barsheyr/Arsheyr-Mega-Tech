@@ -26,7 +26,7 @@ const Header = () => {
           <h1
             className={`${
               isActive ? "text-blue-500" : "text-blue-500"
-            } text-2xl tracking-[10px] font-Inter font-bold`}
+            } text-2xl tracking-[10px] font-bold`}
           >
             ARSHEYR
           </h1>

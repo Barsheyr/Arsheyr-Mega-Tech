@@ -65,7 +65,7 @@ const SingleProductPage = () => {
           <ProductImage images={images} className="" />
           <section className="flex flex-col gap-4 flex-1">
             <h2 className="text-6xl">{name}</h2>
-            <Stars stars={stars} reviews={reviews} />
+            {/* <Stars stars={stars} reviews={reviews} /> */}
             <h5 className="price text-blue-400 text-2xl font-bold">
               {formatPrice(price)}
             </h5>
@@ -73,10 +73,6 @@ const SingleProductPage = () => {
             <p className="flex gap-10">
               <span className="text-blue-400 font-bold">Available : </span>
               {stock > 0 ? "In stock" : "out of stock"}
-            </p>
-            <p className="flex gap-10">
-              <span className="text-blue-400 font-bold">SKU : </span>
-              {sku}
             </p>
             <p className="flex gap-10">
               <span className="text-blue-400 font-bold">Brand : </span>

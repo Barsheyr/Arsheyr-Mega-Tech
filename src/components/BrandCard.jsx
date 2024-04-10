@@ -23,15 +23,15 @@ const BrandCard = () => {
               <div
                 onClick={() => setIndex(cardsIndex)}
                 className={`${
-                  index === cardsIndex && "bg-white shadow-2xl"
+                  index === cardsIndex && "bg-blue-100 shadow-2xl"
                 } w-[350px] h-[350px] flex flex-col justify-center items-center mx-auto p-[65px] text-center rounded-[12px] cursor-pointer transition-all`}
               >
                 <div className="mb-6">
                   <img src={icon} alt="" />
                 </div>
 
-                <div className="mb-3 text-[30px] font-medium"> {title} </div>
-                <p> {subtitle} </p>
+                <div className="mb-3 text-3xl font-bold"> {title} </div>
+                <p className="text-lg"> {subtitle} </p>
                 {index === cardsIndex && <img src="" />}
               </div>
             </div>

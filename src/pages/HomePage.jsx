@@ -9,7 +9,7 @@ import {
 
 const HomePage = () => {
   return (
-    <div className="z-30 font-inter">
+    <div className="z-30 font-Inter">
       <Hero />
       <FeaturedProducts />
       <div className="">

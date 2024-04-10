@@ -32,26 +32,8 @@ const AddToCart = ({ product }) => {
 
   return (
     <section>
-      <div className="flex gap-5">
-        <span>colors :</span>
-        <div>
-          {colors.map((color, index) => {
-            return (
-              <button
-                key={index}
-                style={{ background: color }}
-                className={`${
-                  mainColor === color ? "color-btn active" : "color-btn"
-                }`}
-                onClick={() => setMainColor(color)}
-              >
-                {mainColor === color ? <FaCheck /> : null}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-      <div className="btn-container">
+      <div className="flex gap-5"></div>
+      <div className="btn-container ">
         <AmountButtons
           increase={increase}
           decrease={decrease}
@@ -60,7 +42,7 @@ const AddToCart = ({ product }) => {
 
         <Link
           to="/cartpage"
-          className="btn bg-blue-500 text-white hover:bg-blue-300 hover:text-black px-10"
+          className="btn bg-blue-500 text-white hover:bg-blue-300 hover:text-black px-10 mt-5"
           onClick={() => addToCart(id, mainColor, amount, product)}
         >
           add to cart

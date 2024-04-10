@@ -84,7 +84,7 @@ const SingleProductPage = () => {
         </div>
         <Link
           to="/productpage"
-          className="btn mt-10 bg-blue-500 text-white hover:bg-blue-300 hover:text-black px-10"
+          className="btn mt-10 border-none bg-blue-500 text-white hover:bg-blue-300 hover:text-black px-10"
         >
           back to products
         </Link>

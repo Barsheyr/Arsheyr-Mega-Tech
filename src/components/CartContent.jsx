@@ -19,13 +19,13 @@ const CartContent = () => {
         <div className="flex flex-row justify-between items-center py-10">
           <Link
             to="/productpage"
-            className="btn bg-blue-500 text-white hover:bg-blue-300 hover:text-black px-5"
+            className="btn bg-blue-500 border-none text-white hover:bg-blue-300 hover:text-black px-5"
           >
             continue shopping
           </Link>
           <button
             type="button"
-            className="link-btn clear-btn btn bg-black text-white hover:bg-blue-300 hover:text-black px-5"
+            className="link-btn clear-btn btn border-none bg-black text-white hover:bg-blue-300 hover:text-black px-5"
             onClick={clearCart}
           >
             clear shopping cart

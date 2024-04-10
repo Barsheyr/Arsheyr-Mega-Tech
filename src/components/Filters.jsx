@@ -36,13 +36,13 @@ const Filters = () => {
               value={text}
               placeholder="search"
               onChange={updateFilters}
-              className="p-2 bg-gray-300 rounded-sm tracking-tighter"
+              className="p-2 bg-gray-300 w-[50%] lg:w-full rounded-sm tracking-tighter"
             />
           </div>
           {/* end of search input */}
           {/* category */}
           <div className="form-control mt-5">
-            <h5 className="mb-2 font-bold text-3xl">category</h5>
+            <h5 className="mb-2 font-bold lg:text-xl ">Category</h5>
             <div className="flex flex-col items-start space-y-1">
               {categories.map((c, index) => {
                 return (
@@ -64,12 +64,12 @@ const Filters = () => {
           {/* end of category */}
           {/* company */}
           <div className="form-control mt-5">
-            <h5 className="mb-2 font-bold text-3xl">company</h5>
+            <h5 className="mb-2 font-bold lg:text-xl">Company</h5>
             <select
               name="company"
               value={company}
               onChange={updateFilters}
-              className="bg-gray-200"
+              className="bg-gray-200 w-[50%] lg:w-full"
             >
               {companies.map((c, index) => {
                 return (
@@ -82,52 +82,9 @@ const Filters = () => {
           </div>
           {/* end of company */}
 
-          {/* colors */}
-          {/* <div className="form-control mt-5">
-            <h5 className="mb-2">colors</h5>
-            <div className="flex items-center">
-              {colors.map((c, index) => {
-                if (c === "all") {
-                  return (
-                    <button
-                      key={index}
-                      name="color"
-                      onClick={updateFilters}
-                      data-color="all"
-                      className={`${
-                        color === "all"
-                          ? "flex items-center justify-center active"
-                          : "flex items-center justify-center"
-                      }`}
-                    >
-                      all
-                    </button>
-                  );
-                }
-                return (
-                  <button
-                    key={index}
-                    name="color"
-                    style={{ background: c }}
-                    className={`${
-                      color === c
-                        ? "flex items-center justify-center cursor-pointer opacity-50 w-4 h-4"
-                        : "color-btn"
-                    }`}
-                    data-color={c}
-                    onClick={updateFilters}
-                  >
-                    {color === c ? <FaCheck /> : null}
-                  </button>
-                );
-              })}
-            </div>
-          </div> */}
-          {/* end of colors */}
-
           {/* price */}
           <div className="form-control mt-5">
-            <h5 className="mb-2">price</h5>
+            <h5 className="mb-2 font-bold">Price</h5>
             <p className="price">{formatPrice(price)}</p>
             <input
               type="range"
@@ -136,11 +93,12 @@ const Filters = () => {
               min={min_price}
               max={max_price}
               value={price}
+              className="w-[50%] lg:w-full"
             />
           </div>
           {/* end of price */}
           {/* shipping */}
-          <div className="form-control flex flex-row justify-between items-center mt-5 py-3">
+          <div className="form-control flex flex-row lg:justify-between gap-5 items-center mt-5 py-3">
             <label htmlFor="shipping">free shipping</label>
             <input
               type="checkbox"

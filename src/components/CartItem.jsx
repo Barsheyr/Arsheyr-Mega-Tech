@@ -21,8 +21,8 @@ const CartItem = ({ id, image, name, color, price, amount }) => {
           className="lg:w-[20vh] md:w-[20vh] w-[20vh] rounded-md"
         />
         <div className="py-3">
-          <h5 className=" font-bold text-md">{name}</h5>
-          <h5 className="text-blue-500 text-sm flex lg:hidden">
+          <h5 className=" font-bold lg:text-md text-xs">{name}</h5>
+          <h5 className="text-blue-500 lg:text-md text-xs flex lg:hidden">
             {formatPrice(price * amount)}
           </h5>
         </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ListView = ({ products }) => {
   return (
-    <div className=" max-w-5xl mx-auto px-20 flex flex-col items-center justify-between">
+    <div className="container mx-auto px-10 flex flex-col items-center justify-between">
       {products.map((product) => {
         const { id, image, name, price, description } = product;
         return (
@@ -16,7 +16,10 @@ const ListView = ({ products }) => {
                 {formatPrice(price)}
               </h5>
               <p>{description.substring(0, 150)}...</p>
-              <Link to={`/productpage/${id}`} className="btn bg-blue-400 px-20">
+              <Link
+                to={`/productpage/${id}`}
+                className="btn bg-blue-400 px-20 border-none"
+              >
                 Details
               </Link>
             </div>

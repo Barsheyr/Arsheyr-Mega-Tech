@@ -42,7 +42,7 @@ const AddToCart = ({ product }) => {
 
         <Link
           to="/cartpage"
-          className="btn bg-blue-500 border-none text-white hover:bg-blue-300 hover:text-black px-10 mt-5"
+          className="btn bg-blue-500 border-none text-white hover:bg-black hover:text-white px-10 mt-5"
           onClick={() => addToCart(id, mainColor, amount, product)}
         >
           add to cart

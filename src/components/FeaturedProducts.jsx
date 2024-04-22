@@ -21,7 +21,7 @@ const FeaturedProducts = () => {
   return (
     <div className="section max-w-7xl mx-auto flex flex-col items-center space-y-5 mt-20 ">
       <div className="title text-center lg:text-5xl text-3xl font-bold">
-        <h2>Featured Products</h2>
+        <h2 className="mb-20">Featured Products</h2>
         <div className="underline"></div>
       </div>
       <div className="grid lg:grid-cols-3 px-10 gap-10 ">

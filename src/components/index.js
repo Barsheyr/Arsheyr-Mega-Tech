@@ -18,6 +18,8 @@ import Stars from "./Stars";
 import CartContent from "./CartContent";
 import StripeCheckout from "./StripeCheckout";
 import BrandCard from "./BrandCard";
+import Features from "./Features";
+import Newsletter from "./Newsletter";
 
 export {
   Navbar,
@@ -40,4 +42,6 @@ export {
   CartContent,
   StripeCheckout,
   BrandCard,
+  Features,
+  Newsletter,
 };

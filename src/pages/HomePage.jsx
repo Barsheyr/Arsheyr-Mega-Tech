@@ -5,6 +5,8 @@ import {
   Footer,
   Services,
   Contacts,
+  Features,
+  Newsletter,
 } from "../components";
 
 const HomePage = () => {
@@ -16,6 +18,8 @@ const HomePage = () => {
         <Services />
       </div>
       <Contacts />
+      <Features />
+      <Newsletter />
     </div>
   );
 };

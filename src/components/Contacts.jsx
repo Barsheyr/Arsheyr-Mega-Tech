@@ -17,7 +17,7 @@ const Contacts = () => {
             {title}
           </h2>
           <p
-            className="text-2xl text-light font-normal mb-6 lg:max-w-[350px]"
+            className="text-xl text-light font-normal mb-6 lg:max-w-[350px]"
             data-aos="fade-up"
             data-aos-offset="400"
             data-aos-delay="300"

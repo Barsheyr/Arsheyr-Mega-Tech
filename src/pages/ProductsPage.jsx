@@ -3,10 +3,10 @@ import { Filters, ProductList, Sort, PageHero } from "../components";
 
 const ProductsPage = () => {
   return (
-    <div className=" bg-slate-50 py-20">
+    <div className=" bg-slate-50 py-10">
       <PageHero title="Products" />
       <div className="page">
-        <div className="flex lg:flex-row flex-col gap-20 mt-10">
+        <div className="flex lg:flex-row flex-col  items-start justify-between mt-10">
           <Filters />
           <div>
             <Sort />

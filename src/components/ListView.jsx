@@ -8,7 +8,7 @@ const ListView = ({ products }) => {
       {products.map((product) => {
         const { id, image, name, price, description } = product;
         return (
-          <article key={id} className="grid grid-cols-1 py-5">
+          <article key={id} className="grid grid-cols-1 mb-10">
             <img src={image} alt={name} className="h-[30vh] rounded-md" />
             <div className="mt-10 space-y-2">
               <h4 className="font-bold text-xl">{name}</h4>

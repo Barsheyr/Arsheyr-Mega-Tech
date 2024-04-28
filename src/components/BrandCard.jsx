@@ -30,8 +30,8 @@ const BrandCard = () => {
                   <img src={icon} alt="" />
                 </div>
 
-                <div className="mb-3 text-3xl font-bold"> {title} </div>
-                <p className="text-lg"> {subtitle} </p>
+                <div className="mb-3 text-xl font-bold"> {title} </div>
+                <p className="text-base"> {subtitle} </p>
                 {index === cardsIndex && <img src="" />}
               </div>
             </div>

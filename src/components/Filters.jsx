@@ -29,14 +29,14 @@ const Filters = () => {
       <div className="content">
         <form onSubmit={(e) => e.preventDefault()}>
           {/* search input */}
-          <div className="form-control mt-5">
+          <div className="form-control mt-10">
             <input
               type="text"
               name="text"
               value={text}
               placeholder="search"
               onChange={updateFilters}
-              className="p-2 bg-gray-300 w-[50%] lg:w-full rounded-sm tracking-tighter"
+              className="p-2 bg-gray-300 w-[100%] lg:w-full rounded-sm tracking-tighter"
             />
           </div>
           {/* end of search input */}
@@ -69,7 +69,7 @@ const Filters = () => {
               name="company"
               value={company}
               onChange={updateFilters}
-              className="bg-gray-200 w-[50%] lg:w-full"
+              className="bg-gray-200 w-full"
             >
               {companies.map((c, index) => {
                 return (

@@ -7,7 +7,7 @@ const MobileNav = () => {
   const { loginWithRedirect, myUser, logout } = useUserContext();
   return (
     <div className="w-full h-full">
-      <nav className="h-full  font-tertiary tracking-[3px] text-[25px] flex flex-col justify-center items-center gap-y-8">
+      <nav className="h-full font-tertiary  text-xl flex flex-col justify-center items-center gap-y-8">
         <NavLink to="/" className="nav-link">
           Home
         </NavLink>
@@ -31,7 +31,7 @@ const MobileNav = () => {
         ) : (
           <button
             type="button"
-            className="auth-btn text-2xl flex flex-row items-center gap-2 "
+            className="auth-btn text-xl flex flex-row items-center gap-2 "
             onClick={loginWithRedirect}
           >
             Login <FaUserPlus />

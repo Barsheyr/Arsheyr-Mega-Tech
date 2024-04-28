@@ -13,7 +13,7 @@ const CartItem = ({ id, image, name, color, price, amount }) => {
     toggleAmount(id, "dec");
   };
   return (
-    <div className=" flex items-center justify-between gap-x-10 py-10">
+    <div className="flex items-center justify-between gap-x-10 mb-10">
       <div className="flex items-center gap-5">
         <img
           src={image}

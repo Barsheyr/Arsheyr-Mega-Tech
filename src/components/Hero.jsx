@@ -5,27 +5,29 @@ import bcg2 from "../assets/bcg2.jpg";
 
 const Hero = () => {
   return (
-    <div className="max-w-6xl mx-auto px-5 py-20 gap-12 grid lg:first:grid-cols-2 items-center">
-      <div className=" text-black mt-14 items-center">
-        <h1 className="lg:text-5xl text-4xl font-bold">
-          Gateway to Innovation!
+    <div className="max-w-6xl mx-auto py-44 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center px-5">
+      <div className="order-1 lg:order-none">
+        <h1 className="max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
+          Gateway to Innovation
         </h1>
-        <p className="mt-10 text-xl mb-5 lg:pr-32 leading-8">
+        <p className="mt-8 max-w-xl text-lg leading-8">
           Discover the latest in cutting-edge technology at your fingertips. Our
           expertly curated selection of products ensures you stay ahead in the
           fast-paced world of technology.
         </p>
 
-        <Link
-          to="/productpage"
-          className="bg-blue-400 hover:bg-black hover:text-white py-3 px-5 text-black  text-sm rounded-md"
-        >
-          Shop now
-        </Link>
+        <div className="mt-10">
+          <Link
+            to="/productpage"
+            className="bg-blue-400 hover:bg-black hover:text-white py-3 px-5 text-black text-sm rounded-md"
+          >
+            Shop now
+          </Link>
+        </div>
       </div>
 
       {/* image */}
-      <div className="h-[55vh] mt-20">
+      <div className="">
         <img src={herobcg} alt="" className="" />
       </div>
     </div>

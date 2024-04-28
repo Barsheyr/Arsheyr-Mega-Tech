@@ -26,7 +26,7 @@ const CartButton = () => {
       {myUser ? (
         <button
           type="button"
-          className="auth-btn"
+          className="auth-btn text-xl flex flex-row items-center gap-2"
           onClick={() => {
             clearCart();
             localStorage.removeItem("user");

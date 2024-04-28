@@ -10,18 +10,18 @@ const CartContent = () => {
 
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-10 lg:px-0">
+      <div className="max-w-6xl mx-auto px-10 lg:px-5">
         <CartColumns />
         {cart.map((item) => {
           return <CartItem key={item.id} {...item} />;
         })}
         <hr />
-        <div className="flex flex-row justify-between items-center gap-10 py-10">
+        <div className="flex flex-row justify-between items-center py-10">
           <Link
             to="/productpage"
             className="btn bg-blue-500 border-none text-white hover:bg-black hover:text-white px-5"
           >
-            back
+            contiue shopping
           </Link>
           <button
             type="button"

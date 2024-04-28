@@ -19,22 +19,25 @@ const FeaturedProducts = () => {
     return <Error />;
   }
   return (
-    <div className="section max-w-7xl mx-auto flex flex-col items-center space-y-5">
+    <div className="section max-w-7xl mx-auto flex flex-col items-center">
       <div className="title text-center lg:text-5xl text-3xl font-bold">
         <h2 className="mb-20">Featured Products</h2>
         <div className="underline"></div>
       </div>
-      <div className="grid lg:grid-cols-3 px-10 gap-10 ">
+      <div className="grid lg:grid-cols-3 px-10 gap-10">
         {featured.slice(0, 3).map((product) => {
           return <Product key={product.id} {...product} />;
         })}
       </div>
-      <Link
-        to="/productpage"
-        className="bg-blue-300 py-3 px-3 text-black uppercase rounded-md"
-      >
-        All products
-      </Link>
+
+      <div className="mt-10">
+        <Link
+          to="/productpage"
+          className="bg-blue-400 hover:bg-black hover:text-white py-3 px-5 text-black text-sm rounded-md"
+        >
+          All products
+        </Link>
+      </div>
     </div>
   );
 };

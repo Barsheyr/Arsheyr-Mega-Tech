@@ -8,7 +8,7 @@ const ListView = ({ products }) => {
       {products.map((product) => {
         const { id, image, name, price, description } = product;
         return (
-          <article key={id} className="grid grid-cols-1 mb-10">
+          <article key={id} className="grid lg:grid-cols-2  items-center mb-10">
             <img src={image} alt={name} className="h-[30vh] rounded-md" />
             <div className="mt-10 space-y-2">
               <h4 className="font-bold text-xl">{name}</h4>
@@ -18,7 +18,7 @@ const ListView = ({ products }) => {
               <p>{description.substring(0, 150)}...</p>
               <Link
                 to={`/productpage/${id}`}
-                className="btn bg-blue-400 px-20 border-none"
+                className="btn bg-blue-400 px-5 border-none"
               >
                 Details
               </Link>

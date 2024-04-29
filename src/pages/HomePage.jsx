@@ -7,6 +7,7 @@ import {
   Contacts,
   Features,
   Newsletter,
+  Bestsellers,
 } from "../components";
 
 const HomePage = () => {
@@ -17,9 +18,10 @@ const HomePage = () => {
       <div className="">
         <Services />
       </div>
+      <Bestsellers />
       <Contacts />
-      <Features />
       <Newsletter />
+      <Features />
     </div>
   );
 };

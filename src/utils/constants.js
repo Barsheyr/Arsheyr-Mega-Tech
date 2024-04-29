@@ -2,6 +2,21 @@ import React from "react";
 import { GiCompass, GiDiamondHard, GiStabbedNote } from "react-icons/gi";
 import { FaFacebook } from "react-icons/fa";
 
+import bestseller1 from "../assets/bestseller-1.jpg";
+import bestseller2 from "../assets/bestseller-2.png";
+import bestseller3 from "../assets/bestseller-3.jpg";
+import bestseller4 from "../assets/bestseller-4.jpg";
+import bestseller5 from "../assets/bestselller5.jpg";
+import bestseller6 from "../assets/bestseller6.jpg";
+import bestseller7 from "../assets/bestseller7.jpg";
+import bestseller8 from "../assets/bestseller8.jpg";
+import bestseller10 from "../assets/bestseller10.jpg";
+import bestseller11 from "../assets/bestseller11.jpg";
+import bestseller12 from "../assets/bestseller12.jpg";
+import bestseller13 from "../assets/bestseller13.jpg";
+import bestseller15 from "../assets/bestseller15.jpg";
+import bestseller16 from "../assets/betseller16.jpg";
+
 export const links = [
   {
     id: 1,
@@ -17,6 +32,57 @@ export const links = [
     id: 3,
     text: "products",
     url: "/productpage",
+  },
+];
+
+export const bestsellerz = [
+  {
+    id: 1,
+    img: bestseller8,
+    name: "Gevril Men's Watch",
+    price: "$620.00",
+  },
+  {
+    id: 2,
+    img: bestseller5,
+    name: "Favre-Leube Men's Watch",
+    price: "$589.00",
+  },
+  {
+    id: 3,
+    img: bestseller12,
+    name: "Fendi Women's Watch",
+    price: "$1699.00",
+  },
+  {
+    id: 1,
+    img: bestseller13,
+    name: "Hamilton Men's Watch",
+    price: "$579.00",
+  },
+  {
+    id: 1,
+    img: bestseller10,
+    name: "Raymond Weil Unisex Watch",
+    price: "$579.00",
+  },
+  {
+    id: 1,
+    img: bestseller11,
+    name: "Raymond Weil Unisex Watch",
+    price: "$579.00",
+  },
+  {
+    id: 1,
+    img: bestseller15,
+    name: "Raymond Weil Unisex Watch",
+    price: "$579.00",
+  },
+  {
+    id: 1,
+    img: bestseller16,
+    name: "Raymond Weil Unisex Watch",
+    price: "$579.00",
   },
 ];
 

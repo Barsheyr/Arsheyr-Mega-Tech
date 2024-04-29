@@ -20,6 +20,7 @@ import StripeCheckout from "./StripeCheckout";
 import BrandCard from "./BrandCard";
 import Features from "./Features";
 import Newsletter from "./Newsletter";
+import Bestsellers from "./Bestsellers";
 
 export {
   Navbar,
@@ -44,4 +45,5 @@ export {
   BrandCard,
   Features,
   Newsletter,
+  Bestsellers,
 };

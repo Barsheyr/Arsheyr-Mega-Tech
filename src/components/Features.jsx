@@ -6,8 +6,8 @@ import { CiCircleCheck } from "react-icons/ci";
 
 const Features = () => {
   return (
-    <div className="">
-      <div className="max-w-6xl mx-auto px-20 grid lg:grid-cols-4 grid-cols-1 gap-5">
+    <div className="bg-slate-100 py-20">
+      <div className="max-w-6xl mx-auto px-20 grid lg:grid-cols-4 grid-cols-2 gap-5">
         <div className="">
           <PiShoppingCartSimpleLight size={50} className="mb-2" />
           <div>

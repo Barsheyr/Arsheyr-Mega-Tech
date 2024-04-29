@@ -25,7 +25,7 @@ const Filters = () => {
   const colors = getUniqueValues(all_products, "colors");
 
   return (
-    <div className="lg:px-20 px-5">
+    <div className="px-5">
       <div className="content">
         <form onSubmit={(e) => e.preventDefault()}>
           {/* search input */}
@@ -42,7 +42,7 @@ const Filters = () => {
           {/* end of search input */}
           {/* category */}
           <div className="form-control mt-5">
-            <h5 className="mb-2 font-bold lg:text-xl ">Category</h5>
+            <h5 className="mb-2 font-bold text-base">Category</h5>
             <div className="flex flex-col items-start space-y-1">
               {categories.map((c, index) => {
                 return (
@@ -64,7 +64,7 @@ const Filters = () => {
           {/* end of category */}
           {/* company */}
           <div className="form-control mt-5">
-            <h5 className="mb-2 font-bold lg:text-xl">Company</h5>
+            <h5 className="mb-2 font-bold text-base">Company</h5>
             <select
               name="company"
               value={company}
@@ -112,7 +112,7 @@ const Filters = () => {
         </form>
         <button
           type="button"
-          className="bg-red-400 rounded-md text-white px-1 py-2"
+          className="bg-red-400 rounded-md text-white px-1 w-full py-2"
           onClick={clearFilters}
         >
           clear filters

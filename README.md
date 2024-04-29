@@ -1,4 +1,4 @@
-# Gadget Store
+# Arsheyr Store
 
 Welcome to our Arsheyr Store! This README file provides an overview of our store, its features, and how to get started.
 

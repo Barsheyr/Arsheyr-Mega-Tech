@@ -14,7 +14,6 @@ const CartButton = () => {
         to="/cartpage"
         className="flex items-center justify-between text-xl text-md"
       >
-        Cart
         <span className="flex flex-row justify-center items-center rounded-full px-5 py-3">
           <AiOutlineShoppingCart size={30} className="absolute" />
           <span className="relative text-xs -top-2 left-4 bg-blue-500 text-white rounded-full px-1">

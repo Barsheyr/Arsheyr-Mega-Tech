@@ -27,7 +27,9 @@ const Navbar = () => {
             const { id, text, url } = link;
             return (
               <li key={id}>
-                <Link to={url}>{text}</Link>
+                <Link to={url} className="text-xl">
+                  {text}
+                </Link>
               </li>
             );
           })}

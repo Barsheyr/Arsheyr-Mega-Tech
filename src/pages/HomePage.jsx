@@ -12,12 +12,10 @@ import {
 
 const HomePage = () => {
   return (
-    <div className="z-30 font-Inter">
+    <div className="z-30">
       <Hero />
       <FeaturedProducts />
-      <div className="">
-        <Services />
-      </div>
+      <div className="">{/* <Services /> */}</div>
       <Bestsellers />
       <Contacts />
       <Newsletter />

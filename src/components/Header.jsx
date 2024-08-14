@@ -21,12 +21,12 @@ const Header = () => {
         isActive ? "bg-slate-50 py-5" : "bg-transparent py-5"
       }   fixed z-20 w-full  transition-all font-ntr`}
     >
-      <div className="lg:max-w-5xl mx-6 lg:mx-auto flex justify-between items-center">
+      <div className="lg:max-w-7xl mx-6 py-3 lg:mx-auto flex justify-between items-center">
         <Link to="/">
           <h1
             className={`${
               isActive ? "text-blue-500" : "text-blue-500"
-            } text-2xl tracking-[10px] font-bold`}
+            } text-4xl tracking-[5px] font-bold`}
           >
             ARSHEYR
           </h1>

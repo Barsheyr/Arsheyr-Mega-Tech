@@ -5,7 +5,7 @@ import bcg2 from "../assets/bcg2.jpg";
 
 const Hero = () => {
   return (
-    <div className="max-w-6xl mx-auto py-44 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center px-5">
+    <div className="max-w-7xl mx-auto py-44 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center px-5">
       <div className="order-1 lg:order-none">
         <h1 className="max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
           Gateway to Innovation
@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="mt-10">
           <Link
             to="/productpage"
-            className="bg-blue-400 hover:bg-black hover:text-white py-3 px-5 text-black text-sm rounded-md"
+            className="bg-blue-400 hover:bg-black hover:text-white py-2 px-5 text-black text-md rounded-md"
           >
             Shop now
           </Link>

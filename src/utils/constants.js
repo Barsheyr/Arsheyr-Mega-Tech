@@ -18,13 +18,13 @@ import bestseller15 from "../assets/bestseller15.jpg";
 import bestseller16 from "../assets/betseller16.jpg";
 
 export const links = [
-  // {
-  //   id: 1,
-  //   text: "home",
-  //   url: "/",
-  // },
   {
     id: 1,
+    text: "home",
+    url: "/",
+  },
+  {
+    id: 2,
     text: "products",
     url: "/productpage",
   },

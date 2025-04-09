@@ -5,27 +5,30 @@ import { Link } from "react-router-dom";
 
 const Products = ({ image, name, price, id }) => {
   return (
-    <main>
-      <div className="relative cursor-pointer">
-        <Link to={`/productpage/${id}`}>
-          <img
-            src={image}
-            alt={name}
-            className="h-[30vh] w-[100vh] object-cover hover:opacity-50 rounded-md shadow-sm"
-          />
+    <main className="group relative shadow-md hover:shadow-lg rounded-md transition duration-300">
+      <div className="relative overflow-hidden rounded-md">
+        <img
+          src={image}
+          alt={name}
+          className="h-[30vh] w-full object-cover transition duration-300 group-hover:opacity-60"
+        />
+
+        {/* Hover icon */}
+        <Link
+          to={`/productpage/${id}`}
+          className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300"
+        >
+          <div className="bg-blue-600 p-3 rounded-full text-white shadow-md hover:scale-110 transform transition">
+            <FaSearch />
+          </div>
         </Link>
-        {/* 
-          <Link
-            to={`/productpage/${id}`}
-            className="absolute top-[40%] left-[40%] hover:opacity-100 opacity-0 bg-blue-100
-            flex items-center justify-center rounded-full p-5"
-          >
-            <FaSearch className="" />
-          </Link> */}
       </div>
-      <div className="flex flex-1 justify-between mt-5">
-        <h5>{name}</h5>
-        <p>{formatPrice(price)}</p>
+
+      <div className="flex justify-between items-center mt-4 px-1">
+        <h5 className="text-lg font-semibold text-gray-800 capitalize">
+          {name}
+        </h5>
+        <p className="text-blue-500 font-medium">{formatPrice(price)}</p>
       </div>
     </main>
   );

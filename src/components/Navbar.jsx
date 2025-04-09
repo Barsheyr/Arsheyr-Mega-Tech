@@ -33,11 +33,7 @@ const Navbar = () => {
               </li>
             );
           })}
-          {myUser && (
-            <li>
-              <Link to="/checkout">checkout</Link>
-            </li>
-          )}
+          {myUser && <li>{/* <Link to="/checkout">checkout</Link> */}</li>}
         </ul>
       </div>
     </nav>

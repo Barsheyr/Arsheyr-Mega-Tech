@@ -94,7 +94,7 @@ const Header = () => {
         {/* Logo */}
         <Link to="/">
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-widest text-blue-500 hover:opacity-80 transition">
-            ARSHEYR
+            Arsheyr <span className="font-light text-xs"> Gadgets </span>
           </h1>
         </Link>
 
